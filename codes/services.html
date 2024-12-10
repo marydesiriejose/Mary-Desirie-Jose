@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Desi's Portfolio</title>
+    <title>Services - Desi's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -15,9 +15,16 @@
 
         body {
             font-family: Montserrat, sans-serif;
-            margin: 0;
-            padding: 0;
+            color: #333;
             background: linear-gradient(135deg, #FFD8E4, #FFE6ED, #FFF2F6, #FFFFFF);
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         header {
@@ -40,42 +47,52 @@
             color: #f07aa5;
         }
 
-        .gallery-section {
+        .services-section {
             padding: 40px 20px;
         }
 
-        .gallery-section h2 {
+        .services-section h2 {
             text-align: center;
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 30px;
+            color: hwb(0 20% 80%);
         }
 
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 0 10px;
-        }
-
-        .gallery-grid img {
-            width: 100%;
-            border-radius: 16px;
-            object-fit: cover;
+        .service-card {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .gallery-grid img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 10px rgba(255, 69, 208, 0.31);
+        .service-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            line-height: 1.6;
         }
 
         footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe6ed;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
-            background-color: #ffe6ed;
         }
 
         .footer-content {
@@ -160,21 +177,41 @@
             </nav>
         </header>
 
-        <div class="gallery-section">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <img src="c:\Users\USER\Pictures\k.jpg">
-                <img src="c:\Users\USER\Pictures\PS\alita.png">
-                <img src="c:\Users\USER\Downloads\466982601_1117225906531633_6701840633975729208_n.jpg">
-                <img src="c:\Users\USER\Downloads\sizzler.png">
-                <img src="c:\Users\USER\Pictures\280207538_366090222156688_1839858771891294048_n.jpg">
-                <img src="c:\Users\USER\Downloads\DYSON (2).png">
-                <img src="c:\Users\USER\Pictures\462565011_921202379978554_3512180108067021761_n.jpg">
-                <img src="c:\Users\USER\Pictures\462579979_616489577400130_3566658218055888835_n.jpg">
-                <img src="c:\Users\USER\Pictures\462582284_856301153094159_3298064347824343594_n.jpg">
-                <img src="c:\Users\USER\Pictures\PS\blade-runner-2nd-attempt.png">
-                <img src="c:\Users\USER\Pictures\467133401_7009366212520392_2742602751186506293_n.jpg">
-                <img src="c:\Users\USER\Pictures\462583479_1757399885043353_6124508866805030760_n.jpg">
+        <div class="services-section">
+            <h2>Services I Offer</h2>
+
+            <div class="service-card">
+                <img src="c:\Users\USER\Pictures\467430059_877861011211647_6228021710126569648_n.jpg">
+                <div>
+                    <h3>Cake Design</h3>
+                    <p>
+                        I create custom-designed cakes that are as beautiful as they are delicious. From intricate
+                        details to unique themes, I integrate artistry into every creation, making your special
+                        occasions unforgettable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="c:\Users\USER\Downloads\Northwestern Mindanao State College of Science and Technology.png">
+                <div>
+                    <h3>Graphic Design</h3>
+                    <p>
+                        Bring your ideas to life with eye-catching graphic designs. From branding materials to digital
+                        art, I craft visually compelling designs tailored to your needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="c:\Users\USER\Pictures\462583470_894456632801846_1496773632301558510_n.jpg">
+                <div>
+                    <h3>Painting</h3>
+                    <p>
+                        Explore the world of colors and creativity through my painting services. Whether it’s a custom
+                        portrait, abstract art, or mural work, I turn visions into vibrant masterpieces.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -196,7 +233,7 @@
                     </div>
                     <div class="social-link">
                         <a href="https://x.com/marydesiriejose" target="_blank">
-                            <img src="c:\Users\USER\Downloads\twitter-x-logo-42554.png" alt="X">
+                            <img src="c:\Users\USER\Downloads\twitter-x-logo-42554.png" alt="Twitter">
                         </a>
                         <span>@marydesiriejose</span>
                     </div>
