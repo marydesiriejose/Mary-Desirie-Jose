@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Desi's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFD8E4, #FFE6ED, #FFF2F6, #FFFFFF);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        header a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+            margin-left: 20px;
+        }
+
+        header a:hover {
+            color: #f07aa5;
+        }
+
+        .gallery-section {
+            padding: 40px 20px;
+        }
+
+        .gallery-section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 0 10px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit:cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe6ed;
+        }
+
+        .social-links a img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 20%; /* Optional: Make icons circular */
+            transition: transform 0.3s ease;
+            padding: 0px, 50px;
+        }
+
+        .social-links a img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        .footer-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DESI</div>
+        <nav>
+            <a href="Personal Profile.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            
+            <img src="c:\Users\USER\Pictures\k.jpg">
+            <img src="c:\Users\USER\Pictures\PS\alita.png">
+            <img src="c:\Users\USER\Downloads\466982601_1117225906531633_6701840633975729208_n.jpg">
+            <img src="c:\Users\USER\Downloads\sizzler.png">
+            <img src="c:\Users\USER\Pictures\280207538_366090222156688_1839858771891294048_n.jpg">
+            <img src="c:\Users\USER\Downloads\DYSON (2).png">
+            <img src="c:\Users\USER\Pictures\462565011_921202379978554_3512180108067021761_n.jpg">
+            <img src="c:\Users\USER\Pictures\462579979_616489577400130_3566658218055888835_n.jpg">
+            <img src="c:\Users\USER\Pictures\PS\blade-runner-2nd-attempt.png">
+            <img src="c:\Users\USER\Pictures\467133401_7009366212520392_2742602751186506293_n.jpg">
+            <img src="c:\Users\USER\Pictures\462583479_1757399885043353_6124508866805030760_n.jpg">
+            <img src="c:\Users\USER\Downloads\Northwestern Mindanao State College of Science and Technology.png">
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com/marydesiriejose" target="_blank">
+                <img src="c:\Users\USER\Downloads\pngwing.com.png">
+            </a>
+            <a href="https://instagram.com/marydesiriejose" target="_blank">
+                <img src="c:\Users\USER\Downloads\vecteezy_instagram-logo-png-instagram-icon-transparent_18930692.png">
+            </a>
+            <a href="https://x.com/marydesiriejose" target="_blank">
+                <img src="c:\Users\USER\Downloads\twitter-x-logo-42554.png">
+            </a>
+        </div>
+        <div class="footer-text">© 2024 Mary Desirie Jose. All rights reserved.</div>
+    </footer>
+</body>
+</html>
